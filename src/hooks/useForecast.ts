@@ -14,7 +14,7 @@ const useForecast = () => {
   }
   const getSearchOptions = (value: string) => {
     fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${value.trim()}&limit=5&appid=2abfbbe0fa3ef359a1785987d224a97e`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${value.trim()}&limit=5&appid=2abfbbe0fa3ef359a1785987d224a97e`
     )
       .then((res) => res.json())
       .then((data) => setOption(data))
